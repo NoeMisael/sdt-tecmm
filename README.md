@@ -1,2 +1,2 @@
 # sdt-tecmm
-Tickets System of Tecmm
+Tickets System for Tecmm
