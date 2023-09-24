@@ -1,0 +1,105 @@
+.header {
+    background-color: #00BFFF;
+    justify-content: flex-end;
+    height: 84px;
+    padding: 12px;
+    align-items: center;
+    display: flex;
+    border-radius: 12px;
+
+}
+
+.header .nav-links {
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.header .nav-links li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 10px;
+
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links .btn-nav {
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    background-color: #1E90ff;
+    border-radius: 12px;
+    box-shadow: 0 3px #999;
+}
+
+body {
+    background-color: #87CEFA;
+}
+
+.contacto {
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+    align-items: center;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.contacto .csection {
+    width: 99hw;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.contacto .csection .lsection {
+    border-radius: 15px;
+    min-width: 170px;
+    background-color: #f5eded;
+    width: 30%;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto .csection .lsection .telefono {
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-bottom: 15%;
+}
+
+.contacto .csection .lsection .email {
+    margin-left: 10%;
+    margin-bottom: 15%;
+}
+
+.contacto .csection .lsection .direccion {
+    margin-left: 10%;
+    margin-bottom: 15%;
+}
+
+.contacto .csection .rsection {
+    min-width: 700px;
+    position: relative;
+    width: 70%;
+    padding: 2%;
+    flex-direction: row;
+}
+
+.contacto .csection .rsection .rcontacto {
+    padding: 20px;
+}
