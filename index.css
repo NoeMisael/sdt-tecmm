@@ -103,3 +103,28 @@ body {
 .contacto .csection .rsection .rcontacto {
     padding: 20px;
 }
+
+
+.home {
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    color: #192525;
+    font-size: 45px;
+    align-items: center;
+    padding: 100px;
+}
+
+.img {
+
+    width: 1350px;
+}
+
+.img-servicios {
+    height: 400px;
+    width: 1350px;
+    background-color: #999;
+    background-image: url("https://www.openser.com/wp-content/uploads/2022/09/ticketrsblog.png");
+}
