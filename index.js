@@ -1,65 +1,59 @@
-window.onload = function () {
-    var w = document.getElementById("home");
-    var x = document.getElementById("servicios");
-    var y = document.getElementById("about");
-    var z = document.getElementById("contacto");
+function init() {}
 
-    w.style.display = "block";
-    x.style.display = "none";
-    y.style.display = "none";
-    z.style.display = "none";
+$(document).ready(function () {});
 
-    document.getElementById('menuhome').className = "active";
-    document.getElementById('menuservicios').className = "desactive";
-    document.getElementById('menuabout').className = "desactive";
-    document.getElementById('menucontacto').className = "desactive";
+$(document).on("click", "#btnsoporte", function () {
+  if ($("#level").val() == 1) {
+    $("#lbltitulo").html("Inicio de sesión Soporte");
+    $("#btnsoporte").html("Acceso Usuario");
+    $("#btnadmin").html("Admin");
+    $("#level").val(2);
+  } else if ($("#level").val() == 2) {
+    $("#lbltitulo").html("Inicio de sesión Usuario");
+    $("#btnsoporte").html("Agente Soporte");
+    $("#btnadmin").html("Admin");
+    $("#level").val(1);
 
-}
+  }else if ($("#level").val() == 3) {
+    $("#lbltitulo").html("Inicio de sesión Usuario");
+    $("#btnsoporte").html("Agente Soporte");
+    $("#btnadmin").html("Admin");
+    $("#level").val(1);}
+   else {
+    $("#lbltitulo").html("Inicio de sesión Usuario");
+    $("#btnadmin").html("Agente Soporte");
+    $("#btnsoporte").html("Admin")
+    $("#level").val(1);
+  }
+});
 
-function show(div_id) {
-    var w = document.getElementById("home");
-    var x = document.getElementById("servicios");
-    var y = document.getElementById("about");
-    var z = document.getElementById("contacto");
+$(document).on("click", "#btnadmin", function () {
+  if ($("#level").val() == 1) {
+    $("#lbltitulo").html("Inicio de sesión Admin");
+    $("#btnsoporte").html("Acceso Usuario");
+    $("#btnadmin").html("Agente Soporte");
+    $("#level").val(3);
 
+  } else if ($("#level").val() == 3) {
+    $("#lbltitulo").html("Inicio de sesión Soporte");
+    $("#btnsoporte").html("Acceso Usuario");
+    $("#btnadmin").html("Admin");
+    $("#level").val(2);
 
-    if (div_id === "home") {
-        w.style.display = "block";
-        x.style.display = "none";
-        y.style.display = "none";
-        z.style.display = "none";
-        document.getElementById('menuhome').className = "active";
-        document.getElementById('menuservicios').className = "desactive";
-        document.getElementById('menuabout').className = "desactive";
-        document.getElementById('menucontacto').className = "desactive";
-    } else if (div_id === "servicios") {
-        w.style.display = "none";
-        x.style.display = "block";
-        y.style.display = "none";
-        z.style.display = "none";
-        document.getElementById('menuhome').className = "desactive";
-        document.getElementById('menuservicios').className = "active";
-        document.getElementById('menuabout').className = "desactive";
-        document.getElementById('menucontacto').className = "desactive";
-    } else if (div_id === "about") {
-        w.style.display = "none";
-        x.style.display = "none";
-        y.style.display = "block";
-        z.style.display = "none";
-        document.getElementById('menuhome').className = "desactive";
-        document.getElementById('menuservicios').className = "desactive";
-        document.getElementById('menuabout').className = "active";
-        document.getElementById('menucontacto').className = "desactive";
-    } else {
-        w.style.display = "none";
-        x.style.display = "none";
-        y.style.display = "none";
-        z.style.display = "block";
-        document.getElementById('menuhome').className = "desactive";
-        document.getElementById('menuservicios').className = "desactive";
-        document.getElementById('menuabout').className = "ddsactive";
-        document.getElementById('menucontacto').className = "active";
+  } else if ($("#level").val() == 2) {
+    $("#lbltitulo").html("Inicio de sesión Admin");
+    $("#btnsoporte").html("Acceso Usuario");
+    $("#btnadmin").html("Agente Soporte");
+    $("#level").val(3);
 
-    }
+  }
+  
+  else {
+    $("#lbltitulo").html("Inicio de sesión Usuario");
+    $("#btnadmin").html("Agente Soporte");
+    $("#btnsoporte").html("Admin");
+    $("#level").val(1);
+  }
+});
 
-}
+init();
